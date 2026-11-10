@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>AT-35 看圖選單字｜獨立測試</title>
+<style>body{margin:0;background:#f4f6fb;color:#23324b;font:17px -apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}main{max-width:620px;margin:auto;padding:18px}section{background:#fff;padding:22px;border-radius:22px;box-shadow:0 8px 28px #1d315414}h1{font-size:25px;margin:10px 0}p{line-height:1.6}.photo{width:100%;height:270px;object-fit:cover;border-radius:16px;background:#e6eaf2}button{border:0;border-radius:12px;padding:15px;font:inherit;cursor:pointer}.options{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:18px 0}.options button{background:#eaf0ff;color:#254a91}.options button:disabled{opacity:.75}.options .right{background:#d4f5e4;color:#12653d}.options .wrong{background:#ffe0e0;color:#8c2222}#next{width:100%;background:#3155b6;color:white}small{color:#64738c}a{color:#3155b6}#feedback{min-height:28px;font-weight:600}@media(max-width:420px){.photo{height:230px}}</style></head>
+<body><main><p><a href="./index.html">← 返回原課程</a></p><section><small>AT-35 · 獨立測試頁 · 不修改原始成績</small><h1>看圖選英文單字</h1><p id="counter"></p><img id="photo" class="photo" alt="請觀察圖片並選出英文單字"><p id="hint">觀察圖片，選擇正確的英文。</p><div class="options" id="options"></div><p id="feedback" aria-live="polite"></p><button id="next" hidden>下一題 →</button><p><small>圖片使用公開圖庫遠端載入，正式版將改為本地化精緻素材。此頁不讀寫既有學習進度。</small></p></section></main>
+<script>
+const items=[
+{word:"apple",zh:"蘋果",photo:"https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6?w=900&q=85"},
+{word:"banana",zh:"香蕉",photo:"https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?w=900&q=85"},
+{word:"book",zh:"書本",photo:"https://images.unsplash.com/photo-1497633762265-9d179a990aa6?w=900&q=85"},
+{word:"coffee",zh:"咖啡",photo:"https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=900&q=85"},
+{word:"water",zh:"水",photo:"https://images.unsplash.com/photo-1433086966358-54859d0ed716?w=900&q=85"}
+];
+let index=0,score=0,answered=false;
+const el=id=>document.getElementById(id);
+function render(){answered=false;const item=items[index];el("counter").textContent="第 "+(index+1)+" / "+items.length+" 題 · 本次答對 "+score+" 題";el("photo").src=item.photo;el("photo").alt="題目圖片："+item.zh;el("feedback").textContent="";el("next").hidden=true;const choices=[item.word,...items.filter(x=>x.word!==item.word).slice(0,3).map(x=>x.word)].sort((a,b)=>((a.charCodeAt(0)+index*7)%11)-((b.charCodeAt(0)+index*7)%11));el("options").replaceChildren();choices.forEach(word=>{const b=document.createElement("button");b.textContent=word;b.onclick=()=>{if(answered)return;answered=true;const ok=word===item.word;if(ok)score++;el("feedback").textContent=ok?"答對了！"+item.word+" = "+item.zh:"正確答案："+item.word+"（"+item.zh+"）";[...el("options").children].forEach(btn=>{btn.disabled=true;if(btn.textContent===item.word)btn.classList.add("right");else if(btn===b)btn.classList.add("wrong")});el("next").hidden=false;el("next").textContent=index===items.length-1?"重新開始":"下一題 →"};el("options").append(b)})}
+el("next").onclick=()=>{if(index===items.length-1){index=0;score=0}else index++;render()};render();
+</script></body></html>
