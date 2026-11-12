@@ -1,0 +1,60 @@
+Could you send me the revised quotation before noon?|I'll forward it as soon as the manager approves it.|The warehouse is beside the bank.;No, the meeting room is larger.|請求寄報價，適切回應是說明何時寄出。
+Who is responsible for arranging the airport transfer?|The travel coordinator handles that.|It leaves from Terminal 2.;The fare has increased slightly.|Who 問負責的人。
+Has the customer approved the sample yet?|We're still waiting for written confirmation.|The sample is on the top shelf.;It costs twenty dollars per unit.|yet 問進度，回應仍在等書面核准。
+Why was the inspection postponed?|The production line was still running.|At ten tomorrow morning.;The inspector's office is upstairs.|Why 問原因，非時間或位置。
+Would you prefer the morning or afternoon session?|Either is fine, as long as it finishes before four.|Yes, the projector is working.;The session was very informative.|選擇問句可回應任一時段皆可並加條件。
+Where can I find the expense claim form?|It's on the staff portal under Finance.|The claim was approved yesterday.;You can claim up to fifty dollars.|Where 問取得表格的位置。
+Isn't the supplier based in Singapore?|It used to be, but its headquarters moved last year.|Yes, the order is ready.;I prefer the smaller package.|以曾在該地但已搬遷，間接回答否定問句。
+Can we move the briefing to Thursday?|Let me check whether the room is available.|The report has three sections.;Thursday's sales were higher.|改期請求需先確認場地。
+How long will the replacement take to arrive?|Approximately three working days.|There are three boxes.;It arrived at the loading bay.|How long 問時間長度。
+Do you need a printed copy of the agenda?|An electronic version would be sufficient.|The printer is very expensive.;The meeting ended early.|以電子版足夠，間接表達不需要紙本。
+When does the early registration discount expire?|At the end of this week.|The discount is ten percent.;You can register on the website.|When 問截止時間。
+Could someone help me carry these cartons?|I'll ask the warehouse assistant.|They were ordered last month.;The carton is recyclable.|求助搬運，回應會找人幫忙。
+Why don't we order from the local supplier?|That would reduce our delivery costs.|Because I ordered it yesterday.;The local office opens at nine.|Why don't we 是建議，不是單純詢問原因。
+Did you book the same hotel as last year?|No, that one was fully booked.|Yes, the flight is direct.;The hotel is comfortable.|同一家是否預訂，回應客滿所以沒有。
+What should I do with the damaged parts?|Set them aside for the quality team.|The parts arrived on Tuesday.;It is a very busy department.|What should I do 問處置方法。
+Would you mind checking these figures?|Of course; I'll compare them with the invoices.|The figures were announced yesterday.;Yes, the calculator is mine.|Would you mind 為禮貌請求，回應願意核對。
+Who will cover the reception desk during lunch?|Mina offered to take that shift.|Lunch is served downstairs.;The desk needs a new chair.|Who 問午休代理人。
+Is the new model more efficient?|According to the trial results, it uses less energy.|It comes in two colors.;The model number is on the label.|耗能較少可支持效率較高。
+Shall we wait for the director before starting?|She asked us to begin without her.|The director's office is spacious.;It started at nine yesterday.|直接傳達主管要大家先開始。
+How often are the filters replaced?|Every six months, unless they become blocked sooner.|They are stored in the cabinet.;The replacement takes ten minutes.|How often 問頻率，不是所需時間。
+Have you seen the updated floor plan?|Yes, but the loading area is still missing from it.|The floor was cleaned earlier.;I have a plan for the weekend.|回答是否看過並指出內容缺漏。
+Which entrance should visitors use?|The one facing the parking area.|They should arrive before noon.;Visitors receive temporary badges.|Which entrance 問哪個入口。
+Why is this invoice higher than the estimate?|Express delivery was added at your request.|The estimate is in my folder.;It was paid on Monday.|加急運費解釋金額變高。
+Can the repair be finished today?|Only if the spare part arrives before lunch.|The repair manual is blue.;It was installed last year.|only if 提供能當天完成的條件。
+Would you like me to call the courier?|Yes, please ask for a collection time.|The parcel weighs two kilograms.;No, the customer is overseas.|回應是否代打電話並指明詢問事項。
+Where should I park the delivery van?|Use the loading bay behind the building.|The driver is on leave.;It takes forty minutes to drive there.|Where 問停車地點。
+Didn't you receive the revised contract?|I received an email, but the attachment was missing.|The contract lasts two years.;The client is visiting next week.|收到信但沒附件，表示沒收到完整合約。
+When will the results be announced?|Once all the applications have been reviewed.|The results were encouraging.;There are twelve applicants.|以條件完成時點回應 When。
+Do we have enough chairs for the seminar?|We need six more than we currently have.|The seminar topic is safety.;The chairs are comfortable.|缺六張，間接回答數量不足。
+Who authorized the additional expense?|You should check with the project manager.|The expense was substantial.;It is listed on page four.|不確定由誰核准，指出可詢問的人。
+Could we have a quieter meeting room?|Room 6 is free and away from the construction.|The meeting was interesting.;Six people attended yesterday.|推薦遠離施工的空房，回應安靜需求。
+Why has the launch date changed?|The final safety tests aren't complete.|The product comes in two sizes.;The launch was well attended.|測試未完成是改期原因。
+What time should I arrive for the interview?|Please come fifteen minutes before your appointment.|The interviewer is very experienced.;You should bring your resume.|What time 問何時，提前十五分鐘是相對時間回答。
+Can you explain the difference between these plans?|One includes maintenance; the other doesn't.|The plan is on the notice board.;I explained it last month to someone.|比較方案差異是維護是否包含。
+Wouldn't online training be more convenient?|Possibly, but this session requires practical work.|The training room has windows.;Yes, the website is new.|承認可能較方便，但實作需求形成限制。
+How much notice do you need to cancel a booking?|At least forty-eight hours.|There are two notices on the board.;The room costs eighty dollars.|how much notice 問提前多久通知，不是費用。
+Is anyone available to translate this document?|Maya might be able to help after lunch.|The document is three pages long.;It was printed in color.|詢問能協助翻譯的人及其可用時間。
+Should I submit the original receipt?|A clear scanned copy is acceptable.|The receipt is dated Friday.;I submitted my application yesterday.|掃描本也可，間接表示不必一定交原件。
+Why is the back entrance locked?|It's being repaired this week.|It is behind the warehouse.;You can lock it with this key.|Why 問上鎖原因。
+Have the new uniforms arrived?|The courier is expected this afternoon.|They are available in navy blue.;The design was approved.|尚待下午快遞，間接回答還沒到。
+Who is presenting the quarterly figures?|The finance director, unless she is delayed.|The figures are in the spreadsheet.;The quarter ends in June.|Who 問報告者，附例外條件。
+Could you recommend a hotel near the factory?|The Riverside is within walking distance.|The factory produces electronic parts.;The hotel invoice has been paid.|推薦步行可達的旅館符合需求。
+Are we required to attend both sessions?|Only the first is mandatory.|Both rooms have air conditioning.;The second session starts at two.|僅第一場強制，回答是否兩場都必要。
+Where did you put the signed agreement?|I left it with the legal department.|The agreement expires next year.;I signed it in blue ink.|Where 問文件目前所在。
+Would you rather take the train or drive?|The train, since parking will be difficult.|Yes, the train was crowded.;The driver has already left.|選擇題以 train 回應並附原因。
+How many samples does the customer need?|Two of each size, so eight altogether.|The samples look acceptable.;They need to arrive by Friday.|How many 問數量，總共八件。
+Can I extend the equipment loan by a day?|I'll check whether anyone has reserved it.|The equipment is quite heavy.;The loan form is yellow.|延長需先確認下一筆預約。
+Why don't you ask the technician to inspect it?|Good idea; he may recognize the problem.|Because the inspection was on time.;The technician's badge is new.|Why don't you 是建議，適當回應為接受建議。
+When is the next safety assessment?|It hasn't been scheduled yet.|The assessment was difficult.;You need a passing score.|時間尚未決定也是合理 When 回答。
+Could the report be ready sooner?|I can send a draft today, but the figures need checking.|The report has a green cover.;The previous report was longer.|提出先給草稿，並說明正式版限制。
+Do you know whether delivery is included?|The quotation lists a separate shipping charge.|The supplier delivers on weekdays.;I know the delivery driver.|報價另列運費，間接回答不包含。
+Who should receive copies of the minutes?|Everyone who attended, plus the regional manager.|The meeting lasted fifty minutes.;The copier is beside reception.|Who 問會議紀錄收件對象。
+Is there any way to avoid the cancellation fee?|You can change the date instead of canceling.|The fee is shown on the receipt.;There are two available rooms.|改期可避免取消費，提出替代做法。
+Why are you ordering additional stock?|Demand has been higher than forecast.|The stockroom is on the ground floor.;The order number is 918.|需求超預期解釋增加庫存。
+Could you speak to the client while I'm away?|Certainly; please send me the background information.|The client arrived by taxi.;I was away last Thursday.|答應代聯絡並索取背景資料。
+What happens if the shipment fails inspection?|It must be held until Quality Control releases it.|The inspector starts work at eight.;The shipment contains twenty boxes.|條件問句問結果，答暫停放行。
+Has the room reservation been confirmed?|Not yet; the venue is checking our requested layout.|The room has thirty seats.;I prefer a circular table.|Not yet 直接回答確認進度。
+Would you like another copy of the schedule?|I already downloaded the latest version.|The schedule changed last week.;There are five sessions.|已有最新版，間接婉拒再給一份。
+How will staff be informed of the changes?|An announcement will be posted on the portal.|The changes begin in July.;All staff must follow the rules.|How 問通知方式。
+Could we discuss this after the inspection?|Yes, I should be free around three.|The inspection report is confidential.;The discussion was productive.|同意檢查後討論並提供可用時間。

@@ -1,0 +1,60 @@
+quotation|報價單|Please send a detailed ___ before we place the order.
+shipment|貨件|The ___ contains twenty cartons of replacement parts.
+approval|核准|Written ___ is required before production can begin.
+invoice|發票|The supplier corrected the amount on the ___.
+receipt|收據|Keep the ___ as proof of payment.
+deadline|截止期限|The submission ___ has been extended to Friday.
+appointment|預約|Please confirm your ___ with the consultant.
+reservation|訂位|The hotel cannot find our room ___.
+availability|可用情況|Check the room's ___ before sending invitations.
+maintenance|維護|Routine ___ helps prevent unexpected equipment failures.
+inspection|檢查|The final ___ must be completed before shipment.
+warranty|保固|The three-year ___ covers parts and labor.
+refund|退款|The customer requested a ___ for the defective item.
+replacement|替換品|A ___ will be sent at no additional charge.
+installation|安裝|The price includes delivery and ___ of the machine.
+confirmation|確認通知|We are still waiting for written ___ of the booking.
+attachment|附件|The revised drawing is included as an email ___.
+registration|報名|Online ___ closes two days before the conference.
+orientation|新進人員訓練|New employees will attend ___ on their first morning.
+identification|身分證明|Visitors must present photo ___ at reception.
+confidential|機密的|Please do not share this ___ information outside the team.
+reliable|可靠的|We need a ___ supplier who consistently delivers on time.
+available|可用的|No meeting rooms are ___ on Tuesday afternoon.
+defective|有瑕疵的|The ___ unit has been returned for examination.
+mandatory|強制的|Attendance at the safety briefing is ___.
+optional|可選擇的|The afternoon tour is ___; attendance is not required.
+approximately|大約|The journey takes ___ forty minutes.
+immediately|立即|Report any safety hazard ___ to the supervisor.
+efficiently|有效率地|The updated software processes orders more ___.
+carefully|仔細地|Please inspect the fragile components ___.
+postpone|延後|We may need to ___ the launch until testing is complete.
+confirm|確認|Could you ___ the delivery address in writing?
+submit|提交|Applicants must ___ the completed form by noon.
+notify|通知|Please ___ the client if the schedule changes.
+arrange|安排|The assistant will ___ transport from the airport.
+reserve|預訂|Please ___ a room large enough for thirty people.
+reimburse|報銷|The company will ___ approved travel expenses.
+authorize|授權|Only the director can ___ spending above this limit.
+renew|續約|We intend to ___ the service contract for another year.
+cancel|取消|Customers may ___ a booking without charge before Sunday.
+inspect|檢查（動詞）|A technician will ___ the machine tomorrow.
+repair|修理|The engineer needs two hours to ___ the damaged motor.
+replace|更換|Please ___ the worn filter with a new one.
+deliver|運送|The courier will ___ the parcel to reception.
+collect|領取|Employees can ___ their new badges on Friday.
+transfer|轉移|We will ___ the files to the secure server.
+participate|參加|All departments are invited to ___ in the survey.
+attend|出席|The regional manager cannot ___ the meeting.
+provide|提供|The venue will ___ a projector and microphones.
+request|要求|Customers may ___ an electronic copy of the invoice.
+warehouse|倉庫|The spare materials are stored in the ___ behind the factory.
+reception|接待處|Please sign in at ___ when you arrive.
+headquarters|總部|The company's ___ is located in Singapore.
+conference|研討會|The annual industry ___ attracts international speakers.
+colleague|同事|My ___ from the finance department will join us.
+supervisor|主管|Ask your ___ to approve the leave request.
+contractor|承包商|The building ___ will finish the renovation next week.
+supplier|供應商|Our main ___ has increased its production capacity.
+technician|技術人員|A trained ___ must disconnect the lighting system.
+participant|參與者|Each ___ will receive a copy of the training materials.
