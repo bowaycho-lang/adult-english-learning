@@ -1,0 +1,50 @@
+# AT-35 v2 驗證紀錄
+
+本次變更只供 `at35-local-images-v2` 預覽分支，禁止自動合併 main。
+
+## 實作範圍
+
+- 51 張原創寫實圖片，WebP 與網站同站部署，沒有外部圖庫依賴。
+- 既有 Book 1 Unit 1、Unit 2、Book 2 Unit 1 圖像升級；新頁分成 7 個學習主題。
+- 新頁整合看圖選字、聽音選字、對話理解、英文朗讀、慢速朗讀、跟讀錄音回放。
+- 日期使用寫實桌曆底圖搭配明確中文星期／月份，避免相同圖片導致無法作答。
+- 保留舊頁面及舊 localStorage key，新頁使用 `adultEnglishAT35V2`；沒有資料遷移或清除。
+- 測試站與正式站不同 origin，成績不會自動互通。
+
+## 部署前已驗證
+
+Cloudflare Browser Rendering Chromium，390×844、412×1000、1440×1100 三種尺寸：
+
+- 7 個主題可切換，所有單字圖可解碼，沒有水平溢出。
+- 每個主題完整走完看圖測驗，分數正確，作答鎖定、錯題重練正常。
+- 對話理解測驗可完成並正確計分。
+- 圖片失敗時停止計分並提供重試。
+- 聽力必須播放成功才可作答，播放失敗保持鎖定（語音事件使用測試替身，非真人聽感驗證）。
+- 跟讀句子切換及麥克風不可用的提示正常。
+- 以 storage 測試替身確認舊 key 不被變更，新 key 正常保存。上線後另驗證原生 localStorage。
+- 全部 29 個 HTML 內嵌 JavaScript 語法通過；51 張實際部署 WebP 檔案通過解碼檢查。
+
+部署前瀏覽器測試把資源內嵌為縮圖以便遠端測試，實際部署檔為最高 960×640 的原始匯出版本。此測試不等同實際公開網址的載入測試。
+
+## 必須如實保留的限制
+
+- iPhone Safari / Android 實機聲音、麥克風及回放尚未驗證。
+- Chromium 手機尺寸模擬不等於 Safari WebKit 測試。
+- 未從中國大陸實際網路測試 Pages 網域可達性；本地圖片能消除圖庫依賴，不能保證 Pages 網域在所有地區正常。
+- 語音使用系統英文聲線，未提供本地真人音檔；音色與可用性依裝置而異。
+- 這是既有開放單元的圖片與互動升級，不是兩冊 PDF 全文轉換。
+
+## 測試程式
+
+`tests/browser-check.js` 為部署前遠端 Chromium 功能檢查。
+`tests/at35.test.cjs` 為 Playwright 測試，可在具備瀏覽器執行條件的環境跑完整頁面檢查；本次執行環境的 Chromium 啟動受到 socket 限制，故未將該腳本視為通過。
+
+## 2026-11-12 recording lifecycle follow-up
+
+- Fixed pending microphone permission resolving after backgrounding; returned tracks are stopped without starting a recording.
+- Invalidated late recorder events after errors, released tracks/timers, and prevented stale replay from replacing error feedback.
+- Prevented speech demonstrations during recording; pause replay before speech, and cancel speech when replay starts.
+- Preserved MP4 preference with browser-default fallback when MIME probing is absent.
+- Executed `node --test tests/recording.test.cjs`: 5/5 passed (mocked media events, not acoustic/device validation).
+- Executed remote Chromium regression before deployment at 390x844: 13/13 passed, covering seven themes and all quizzes. Inline predeploy test uses a storage shim even though the shared harness labels that check native storage; the live deployment run uses real localStorage.
+- iPhone/Android physical audio and mainland connectivity remain unverified.
