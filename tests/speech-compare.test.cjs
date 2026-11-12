@@ -6,3 +6,6 @@ test('substitution',()=>a.equal(compare('I am Anna','I am Emma').parts.at(-1).ty
 test('extra word',()=>a.equal(compare('hello Kenny','hello dear Kenny').parts.filter(p=>p.type==='extra')[0].heard,'dear'));
 test('empty has no match',()=>a.equal(compare('hello','').score,0));
 test('repeated words align',()=>a.equal(compare('I am who I am','I am I am').parts.filter(p=>p.type==='missing')[0].expected,'who'));
+
+test('modal contractions',()=>a.equal(compare("You shouldn't go. They won't come.",'you should not go they will not come').score,100));
+test('perfect contractions',()=>a.equal(compare("We've eaten. She hasn't.",'we have eaten she has not').score,100));
