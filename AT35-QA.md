@@ -38,3 +38,13 @@ Cloudflare Browser Rendering Chromium，390×844、412×1000、1440×1100 三種
 
 `tests/browser-check.js` 為部署前遠端 Chromium 功能檢查。
 `tests/at35.test.cjs` 為 Playwright 測試，可在具備瀏覽器執行條件的環境跑完整頁面檢查；本次執行環境的 Chromium 啟動受到 socket 限制，故未將該腳本視為通過。
+
+## 2026-11-12 recording lifecycle follow-up
+
+- Fixed pending microphone permission resolving after backgrounding; returned tracks are stopped without starting a recording.
+- Invalidated late recorder events after errors, released tracks/timers, and prevented stale replay from replacing error feedback.
+- Prevented speech demonstrations during recording; pause replay before speech, and cancel speech when replay starts.
+- Preserved MP4 preference with browser-default fallback when MIME probing is absent.
+- Executed `node --test tests/recording.test.cjs`: 5/5 passed (mocked media events, not acoustic/device validation).
+- Executed remote Chromium regression before deployment at 390x844: 13/13 passed, covering seven themes and all quizzes. Inline predeploy test uses a storage shim even though the shared harness labels that check native storage; the live deployment run uses real localStorage.
+- iPhone/Android physical audio and mainland connectivity remain unverified.
