@@ -37,7 +37,7 @@ const byTopic=Object.fromEntries(bank.cases.map(c=>[c.unit,c]));
 function casesFor(index,offset=0){const indices=[index,(index+7+offset)%30,(index+13+offset)%30,(index+19+offset)%30,(index+25+offset)%30];return [...new Set(indices)].map(i=>bank.cases[i]);}
 function comprehension(cases,type){return cases.flatMap(c=>c.questions.map((q,i)=>({...q,id:`x2:${type}:${c.id}:${i}`,type,passage:c.text,passageTitle:c.title,group:c.id,audio:type==='listening'?c.text:undefined,why:q.why})));}
 window.COURSE_EXAMS=Object.fromEntries(window.FULL_COURSE.map((u,index)=>{
- const grammar=[...bank.grammar[u.id].map((q,i)=>({...q,id:`x2:g:${u.id}:${i}`,type:'grammar'})),...wrap(bank.grammar.advanced,index*3,10).map(q=>({...q,id:`x2:a:${bank.grammar.advanced.indexOf(q)}`,type:'grammar'}))];
+ const grammar=wrap(bank.grammar.advanced,index*7,20).map(q=>({...q,id:`x3:a:${bank.grammar.advanced.indexOf(q)}`,type:'grammar'}));
  const reading=comprehension(casesFor(index),'reading');
  const listening=comprehension(casesFor(index,2),'listening');
  const dialogue=wrap(bank.responses,index*2,20).map(q=>({...q,id:`x2:d:${bank.responses.indexOf(q)}`,type:'dialogue',audio:q.q}));

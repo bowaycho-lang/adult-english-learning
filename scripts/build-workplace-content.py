@@ -15,7 +15,7 @@ for row in lines('workplace-grammar.txt'):
         group=row[2:];grammar[group]=[]
     else:grammar[group].append(question(row,','))
 assert len(grammar)==31
-assert all(len(v)==(40 if k=='advanced' else 10) for k,v in grammar.items())
+assert all(len(v)==(80 if k=='advanced' else 10) for k,v in grammar.items())
 cases=[];case=None
 for row in lines('workplace-cases.txt'):
     if row.startswith('# '):
@@ -28,4 +28,4 @@ vocab=[dict(zip(['en','zh','sentence'],row.split('|'))) for row in lines('workpl
 assert len(responses)==60 and len(vocab)==60
 obj=dict(grammar=grammar,cases=cases,responses=responses,vocab=vocab)
 (ROOT/'assets'/'workplace-content.js').write_text('window.WORKPLACE_CONTENT='+json.dumps(obj,ensure_ascii=False,separators=(',',':'))+';\n')
-print('Compiled: 340 grammar items, 30 workplace texts / 120 comprehension items, 60 responses, 60 contextual spellings.')
+print('Compiled: 380 grammar items, 30 workplace texts / 120 comprehension items, 60 responses, 60 contextual spellings.')

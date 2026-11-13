@@ -369,3 +369,43 @@ Having ___ the inspection, the engineer signed the release form.|completed|compl
 The supplier offered a discount in ___ for a larger order.|exchange|change,replacement,returning|in exchange for 表交換條件。
 Neither the supervisor nor the technicians ___ available now.|are|is,be,being|neither ... nor 依靠近的複數 technicians 用 are。
 The revised policy takes ___ immediately.|effect|affect,effective,effectively|take effect 表生效；effect 為名詞。
+The replacement parts, together with the updated manual, ___ expected to arrive tomorrow.|are|is,has,was|主詞為複數 parts；together with 後的名詞不改變主詞數量。
+The applicant was praised for her ability to resolve disputes ___.|diplomatically|diplomatic,diplomacy,diplomat|修飾動詞 resolve 須用副詞 diplomatically。
+___ a valid receipt, the accounting team cannot process the reimbursement.|Without|Unless,Except,Otherwise|Without + 名詞表示缺少必要條件；unless 須接子句。
+The report is not yet complete, ___ its executive summary has been approved.|although|because,so,unless|兩件事形成讓步轉折，應用 although。
+The director insisted on ___ before any changes were made to the contract.|being consulted|consulting,having consulted,be consulted|on 後接動名詞；主管是被諮詢者，故用 being consulted。
+Demand for the product has risen ___ since the advertising campaign began.|steadily|steady,steadiness,steadier|副詞 steadily 修飾 has risen。
+The warranty covers defects ___ from normal use, but excludes accidental damage.|arising|arisen,arise,arises|arising from 作現在分詞片語，修飾 defects。
+Employees seeking reimbursement must have their claims ___ by a supervisor.|approved|approve,approving,approval|have + 受詞 + 過去分詞，表示請人完成審核。
+The brochure is intended for customers ___ first language is not English.|whose|who,whom,which|whose + 名詞 first language 表關係所有格。
+The proposal would have been approved if the cost estimate ___ more detailed.|had been|has been,would be,is|與過去事實相反：would have + p.p. 搭配 if + had been。
+The supplier has agreed to hold the price ___ we confirm the order by Friday.|provided that|even though,as if,rather than|provided that 表只要，提出價格有效的條件。
+The new software is compatible ___ all existing accounting applications.|with|to,for,at|compatible with 為固定搭配。
+The venue cannot accommodate the group ___ additional seating is installed.|unless|whether,despite,so that|unless 表除非加裝座位，否則無法容納。
+Not until the final inspection was complete ___ production resume.|did|had,was,has|Not until 置句首，主句倒裝：did + 主詞 + 原形動詞。
+The chief engineer recommended ___ the worn components rather than repairing them.|replacing|replace,replaced,to replacing|recommend 後可接動名詞 replacing。
+The company has introduced measures aimed at ___ unnecessary expenditure.|reducing|reduce,reduced,reduction of the|at 為介系詞，後接動名詞 reducing。
+The contract specifies the circumstances under ___ either party may withdraw.|which|that,what,whose|介系詞 under 後接關係代名詞 which，指 circumstances。
+The manager has yet ___ whether the revised schedule is feasible.|to determine|determining,determined,determine|have yet to V 表尚未做某事。
+___ the equipment be damaged during transit, the carrier must be notified immediately.|Should|Would,Had,Will|Should + 主詞 + 原形 be 為假設條件倒裝。
+The quotation is valid for thirty days from the date ___ above.|indicated|indicating,indicates,indication|date 是被標示的，用過去分詞 indicated 修飾。
+The consultant's recommendations were accepted with only ___ modifications.|minor|minors,minority,minimally|形容詞 minor 修飾 modifications。
+The shipment was delayed, ___ the installation team to revise its schedule.|forcing|forced,forces,force|逗號後用現在分詞表示前句造成的結果。
+Only after reviewing the figures ___ the board reach a decision yesterday.|did|does,was,had|Only after 置句首要求倒裝；yesterday 用 did + 原形 reach。
+The training program is designed to familiarize new staff ___ company procedures.|with|to,for,about|familiarize someone with something 為固定搭配。
+The manufacturer guarantees that each unit ___ thoroughly before dispatch.|is tested|are tested,has testing,is testing|each unit 單數且被測試，使用 is tested。
+The payment will be processed upon ___ of a correctly issued invoice.|receipt|receive,received,receiving of|upon receipt of 表一收到；此處需名詞 receipt。
+The inspection revealed no evidence of ___ damage to the packaging.|significant|significantly,significance,signify|修飾名詞 damage，使用形容詞 significant。
+The position requires candidates to work independently ___ collaborate across departments.|as well as|in spite of,as a result of,in addition|連接兩個動詞片語 work 與 collaborate，用 as well as。
+We regret ___ you that the requested item has been discontinued.|to inform|informing,having informed,inform|regret to inform 表遺憾地告知現在要傳達的消息。
+The regional office is operating at full ___ and cannot accept additional orders.|capacity|capable,capability of,capacities of|at full capacity 表滿載運作。
+The revised policy applies to all purchases, ___ of their value.|regardless|regarding,respect,regarded|regardless of 表不論金額大小。
+Several employees objected to ___ transferred without prior consultation.|being|be,having,been|object to 的 to 為介系詞；被調動用 being transferred。
+The facilities manager is the person to ___ all maintenance requests should be addressed.|whom|who,whose,which|介系詞 to 後用受格 whom 指人。
+The sooner the parts arrive, ___ we can complete the installation.|the earlier|earlier,earliest,the earliest|the + 比較級 ... the + 比較級 表越…越…。
+The final version of the document must be consistent ___ the approved specifications.|with|to,for,of|consistent with 表與…一致。
+The board postponed its decision pending ___ of the financial review.|completion|complete,completed,completing to|pending 為介系詞，後接名詞 completion of。
+The supervisor requested that every technician ___ the updated checklist.|use|uses,used,using|request that 的正式假設語氣使用原形 use。
+The shipment includes twice ___ units as the previous order.|as many|as much,more,most|twice as many + 可數複數 + as 為倍數比較。
+The new arrangement allows orders to be processed ___ than before.|more efficiently|most efficiently,more efficient,efficiency|修飾 processed 用副詞比較級 more efficiently。
+The applicant's experience makes her particularly ___ for the position.|suitable|suitably,suitability,suit|make + 受詞 + 形容詞 suitable，表適合。

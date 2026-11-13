@@ -41,8 +41,8 @@ for(const u of FULL_COURSE.slice(...range)){
 // A callback from a stopped or superseded recording must not unlock a new round.
 change('readingMode','listening');pending=true;$('passagePlay').click();const stale=spoken;$('readingRestart').click();stale.onend?.();assert([...$('readingChoices').children].every(b=>b.disabled),'stale reading callback');pending=false;
 $('tab-practice').click();change('mode','listening');pending=true;$('hear').click();const old=spoken;$('restart').click();old.onend?.();assert([...$('choices').children].every(b=>b.disabled),'stale main callback');pending=false;
-const saved=JSON.parse(localStorage.getItem('adultEnglishFullCourseV1'));assert(saved.units[FULL_COURSE[range[0]].id].best['toeic2:grammar']===95,'stored new score');
-if(window.__seeded){assert(saved.units.b1u1.best.grammar===80,'old score preserved');assert(saved.units.b1u1.notes==='keep my notes','notes preserved');assert(JSON.parse(localStorage.getItem('adultEnglishReadingV1'))['b1u1:reading']===100,'old reading score preserved')}
+const saved=JSON.parse(localStorage.getItem('adultEnglishFullCourseV1'));assert(saved.units[FULL_COURSE[range[0]].id].best['toeic3:grammar']===95,'stored new score');
+if(window.__seeded){assert(saved.units.b1u1.best.grammar===80,'old score preserved');assert(saved.units.b1u1.best['toeic2:grammar']===90,'previous advanced score preserved');$('book1').click();$('unitMenu').children[0].click();$('tab-practice').click();$('review').click();assert($('counter').textContent.includes('/ 1'),'previous version wrong question found');assert($('question').textContent.includes('contact details'),'previous version prompt restored');assert(saved.units.b1u1.notes==='keep my notes','notes preserved');assert(JSON.parse(localStorage.getItem('adultEnglishReadingV1'))['b1u1:reading']===100,'old reading score preserved')}
 }catch(e){errors.push(e.stack||String(e))}
 const p=document.createElement('pre');p.id='qa';p.textContent=JSON.stringify({rounds,answers,errors});document.body.append(p);
 })();
