@@ -6,6 +6,16 @@ try{const v=JSON.parse(localStorage.getItem(KEY)||'{}');if(v&&typeof v==='object
 const card=document.createElement('section');card.className='card';card.style.marginTop='24px';
 card.innerHTML='<h2>進階短文與聽力測驗 · 20 題</h2><p class="notice">每回合 5 篇職場短文、每篇 4 題：職場情境＋跨訊息推論練習。閱讀及聽力共用職場素材，成績分開記錄。含細節、同義改寫、原因及跨訊息推論。</p><label>練習方式 <select id="readingMode"><option value="reading">職場短文閱讀</option><option value="listening">職場短篇聽力</option></select></label><h3 id="passageTitle"></h3><p id="passageText" style="line-height:1.9;font-size:19px;white-space:pre-line"></p><div id="passageTeaching"></div><p id="passageHint" class="notice" role="status"></p><div class="toolbar"><button id="passagePlay">▶ 一般速度</button><button id="passageSlow">慢速播放</button><button id="passageStop">停止播放</button></div><p id="readingBest" class="notice"></p><p id="readingCounter"></p><h3 id="readingQuestion"></h3><div id="readingChoices" class="answers"></div><p id="readingFeedback" aria-live="polite"></p><div class="toolbar"><button id="readingNext" disabled>下一題</button><button id="readingRestart">重新練習</button></div><div id="readingReview" hidden></div>';
 $('learn').append(card);
+function highlightPassage(element,text,group){
+ const data=window.PASSAGE_TEACHING?.[group],ranges=[],lower=text.toLowerCase();
+ const terms=data?[...data.phrases.map(p=>p.phrase),data.grammar.quote]:[];
+ for(const term of terms){if(!term)continue;let from=0,index;while((index=lower.indexOf(term.toLowerCase(),from))!==-1){ranges.push([index,index+term.length]);from=index+term.length}}
+ ranges.sort((a,b)=>a[0]-b[0]||b[1]-a[1]);const merged=[];
+ for(const range of ranges){const last=merged[merged.length-1];if(last&&range[0]<=last[1])last[1]=Math.max(last[1],range[1]);else merged.push([...range])}
+ element.replaceChildren();let cursor=0;
+ for(const [start,end] of merged){element.append(document.createTextNode(text.slice(cursor,start)));const mark=document.createElement('span');mark.className='passage-focus';mark.style.color='#b42318';mark.style.fontWeight='600';mark.title='片語／文法教學重點';mark.textContent=text.slice(start,end);element.append(mark);cursor=end}
+ element.append(document.createTextNode(text.slice(cursor)));
+}
 function teaching(group){const data=window.PASSAGE_TEACHING?.[group],box=document.createElement('details');box.className='passage-teaching';if(!data)return box;const head=document.createElement('summary');head.textContent='片語說明與文法教學';box.append(head);const add=(tag,text)=>{const el=document.createElement(tag);el.textContent=text;box.append(el)};for(const p of data.phrases){add('h4',p.phrase);add('p',p.meaning);add('p','延伸例句：'+p.example)}const g=data.grammar;add('h4','文法：'+g.title);add('blockquote','原文：'+g.quote);add('p',g.rule);add('p','延伸例句：'+g.example);add('p','學習提醒：'+g.tip);return box;}
 
 const bestKey=()=>`${unitId}:${mode}:toeic3`;
@@ -17,8 +27,8 @@ function render(){
  $('readingNext').disabled=true;$('readingNext').textContent=pos===19?'完成並查看解析':'下一題';
  $('readingCounter').textContent=`第 ${pos+1} / 20 題 · 答對 ${score} 題`;
  $('passageTitle').textContent=`短文 ${Math.floor(pos/4)+1} / 5 · ${q.passageTitle}`;
- $('passageTeaching').replaceChildren();if(mode==='reading')$('passageTeaching').append(teaching(q.group));$('passageText').textContent=q.passage;$('passageText').hidden=mode==='listening';
- $('passageHint').textContent=mode==='reading'?'閱讀短文後，選擇最合適的答案。':heard.has(q.group)?'本篇已播放完成，可以繼續作答或重聽。':'原文暫時隱藏；請完整聽完本篇，再回答這一組四題。';
+ $('passageTeaching').replaceChildren();if(mode==='reading')$('passageTeaching').append(teaching(q.group));highlightPassage($('passageText'),q.passage,q.group);$('passageText').hidden=mode==='listening';
+ $('passageHint').textContent=mode==='reading'?'紅字為下方教學對應的片語與文法重點。閱讀短文後，選擇最合適的答案。':heard.has(q.group)?'本篇已播放完成，可以繼續作答或重聽。':'原文暫時隱藏；請完整聽完本篇，再回答這一組四題。';
  $('readingQuestion').textContent=q.q;$('readingFeedback').textContent='';$('readingChoices').replaceChildren();
  const choices=[...q.choices];for(let i=choices.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[choices[i],choices[j]]=[choices[j],choices[i]]}
  for(const answer of choices){const b=document.createElement('button');b.textContent=answer;b.onclick=()=>{
@@ -49,7 +59,7 @@ function finish(){
  $('readingBest').textContent='新版此模式最佳：'+best()+' 分';$('passageText').hidden=true;$('passageTitle').textContent='五篇短文與逐題解析';$('passageHint').textContent='本次為練習百分制，不能換算成正式多益分數。';
  for(const id of ['passagePlay','passageSlow','passageStop'])$(id).disabled=true;
  const review=$('readingReview');review.hidden=false;
- for(let i=0;i<results.length;i+=4){const d=document.createElement('details'),h=document.createElement('summary'),p=document.createElement('p');h.textContent=`短文 ${i/4+1} · ${results[i].q.passageTitle}`;p.textContent=results[i].q.passage;p.style.lineHeight='1.8';d.append(h,p,teaching(results[i].q.group));
+ for(let i=0;i<results.length;i+=4){const d=document.createElement('details'),h=document.createElement('summary'),p=document.createElement('p');h.textContent=`短文 ${i/4+1} · ${results[i].q.passageTitle}`;highlightPassage(p,results[i].q.passage,results[i].q.group);p.style.lineHeight='1.8';d.append(h,p,teaching(results[i].q.group));
  for(const r of results.slice(i,i+4)){const item=document.createElement('p');item.textContent=`${r.ok?'✓':'✗'} ${r.q.q}\n你的答案：${r.answer}\n正確答案：${r.q.answer}\n${r.q.why}`;item.style.whiteSpace='pre-line';d.append(item)}review.append(d)}
 }
 $('passagePlay').onclick=()=>play(1);$('passageSlow').onclick=()=>play(.75);
