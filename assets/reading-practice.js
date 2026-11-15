@@ -8,7 +8,7 @@ card.innerHTML='<h2>進階短文與聽力測驗 · 20 題</h2><p class="notice">
 $('learn').append(card);
 function highlightPassage(element,text,group){
  const data=window.PASSAGE_TEACHING?.[group],ranges=[],lower=text.toLowerCase();
- const terms=data?[...data.phrases.map(p=>p.phrase),data.grammar.quote]:[];
+ const terms=data?[...data.phrases.map(p=>p.phrase),...(data.prepositions||[]).map(p=>p.quote),data.grammar.quote]:[];
  for(const term of terms){if(!term)continue;let from=0,index;while((index=lower.indexOf(term.toLowerCase(),from))!==-1){ranges.push([index,index+term.length]);from=index+term.length}}
  ranges.sort((a,b)=>a[0]-b[0]||b[1]-a[1]);const merged=[];
  for(const range of ranges){const last=merged[merged.length-1];if(last&&range[0]<=last[1])last[1]=Math.max(last[1],range[1]);else merged.push([...range])}
@@ -22,7 +22,7 @@ function translation(group){
  const box=document.createElement('details'),head=document.createElement('summary'),body=document.createElement('p');
  box.className='passage-translation';head.textContent='中文翻譯（點擊展開／收合）';body.lang='zh-Hant';body.textContent=text;body.style.whiteSpace='pre-line';body.style.lineHeight='1.9';box.append(head,body);return box;
 }
-function teaching(group){const data=window.PASSAGE_TEACHING?.[group],box=document.createElement('details');box.className='passage-teaching';if(!data)return box;const head=document.createElement('summary');head.textContent='片語說明與文法教學';box.append(head);const add=(tag,text)=>{const el=document.createElement(tag);el.textContent=text;box.append(el)};for(const p of data.phrases){add('h4',p.phrase);add('p',p.meaning);add('p','延伸例句：'+p.example)}const g=data.grammar;add('h4','文法：'+g.title);add('blockquote','原文：'+g.quote);add('p',g.rule);add('p','延伸例句：'+g.example);add('p','學習提醒：'+g.tip);return box;}
+function teaching(group){const data=window.PASSAGE_TEACHING?.[group],box=document.createElement('details');box.className='passage-teaching';if(!data)return box;const head=document.createElement('summary');head.textContent='片語、介係詞與文法教學';box.append(head);const add=(tag,text)=>{const el=document.createElement(tag);el.textContent=text;box.append(el)};for(const p of data.phrases){add('h4',p.phrase);add('p',p.meaning);add('p','延伸例句：'+p.example)}for(const p of data.prepositions||[]){add('h4','介係詞教學：'+p.title);add('blockquote','原文：'+p.quote);add('p',p.rule);add('p','例句：'+p.example)}const g=data.grammar;add('h4','文法：'+g.title);add('blockquote','原文：'+g.quote);add('p',g.rule);add('p','延伸例句：'+g.example);add('p','學習提醒：'+g.tip);return box;}
 
 const bestKey=()=>`${unitId}:${mode}:toeic3`;
 const best=()=>Number.isFinite(records[bestKey()])?records[bestKey()]:'—';

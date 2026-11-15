@@ -1,0 +1,30 @@
+orientation|at 9:00|at：精確時間點|at 後接幾點幾分；日期或星期通常用 on，月份或年份用 in。|The meeting starts at ten.（會議十點開始。）
+office_move|to the fourth floor|to：移動目的地|本文 moving to 表示搬往四樓；若描述已位於四樓，則用 on the fourth floor。|Our office is on the second floor.（辦公室在二樓。）
+production_update|by three|by：截止時間|by three 表示最晚三點前完成；until three 表示某狀態持續到三點。|Please reply by five.（請最晚五點回覆。）
+access_cards|by Wednesday|by：期限|by 後接截止日，意思是最晚在該日完成；不是持續做到那一天。|Send the form by Monday.（請最晚週一寄出表單。）
+supplier_quote|within three working days|within：在期間內|within 後接時間長度，表示不超過這段時間；working days 不包含非工作日。|We will reply within two days.（我們會在兩天內回覆。）
+visit_schedule|from the station|from：起點|from 表示從哪裡出發；搭配 to 表示終點，形成 from A to B。|Walk from the station to the office.（從車站走到辦公室。）
+meeting_space|for Tuesday's product demonstration|for：用途或目的|for 後接名詞，說明出席是為了哪個活動；這裡不是表示持續多久。|We need a room for the meeting.（我們需要一間開會用的房間。）
+uniform_order|within fourteen days|within：限定期間|within fourteen days 表示十四天內；after fourteen days 則是十四天之後。|Return the item within seven days.（請在七天內退回商品。）
+service_hours|through the portal|through：透過管道|through 表示透過平台或程序完成事情，不是穿越實體空間。|Apply through our website.（請透過我們的網站申請。）
+shuttle|at Terminal 2|at：停靠地點|at 把航廈視為路線上的一個地點；in Terminal 2 則強調在航廈內部。|The bus stops at the station.（公車停靠車站。）
+invoices|within thirty days of receiving a correct invoice|within … of：從某事件起算|within 限定時間長度，of 後的 receiving 指起算事件；介係詞後用動名詞 receiving。|Pay within ten days of receiving the bill.（收到帳單後十天內付款。）
+temporary_service|with a company meal voucher|with：使用工具或憑證|with 後接使用的物品，這裡表示持公司餐券用餐。|You can pay with a card.（你可以用卡片付款。）
+safety_training|under direct supervision|under：處於監督之下|under 不只表示空間的下方，也表示受某種管理、監督或條件約束。|Work under a trainer’s supervision.（在訓練員的監督下工作。）
+travel_plan|near the factory|near：靠近|near 後可直接接地點名詞，不必再加 to；與 far from（離……遠）相對。|The hotel is near the station.（飯店靠近車站。）
+service_visit|on June 4|on：具體日期|特定日期用 on；只說月份則用 in June。|The technician will come on July 2.（技師將於七月二日到訪。）
+shipment_inquiry|because of traffic|because of：原因|because of 是複合介係詞，後接名詞；because 則接完整子句。|We were late because of the rain.（我們因下雨而遲到。）
+event_review|before the event|before：早於某事件|before 後接名詞 event，表示在活動之前；after 表示之後。|Check the room before the meeting.（開會前檢查房間。）
+client_gifts|during the move|during：在事件期間|during 後接名詞事件，說明何時發生；for two days 則說明持續多久。|Please call me during the break.（請在休息時間打給我。）
+catering|at the same price|at：價格|表示以某個價格供應或販售，常用 at；the same price 表示相同價格。|Both meals are available at the same price.（兩種餐點價格相同。）
+materials|on wooden surfaces|on：接觸表面|on 表示在物體表面上；此處是在木質表面使用清潔液。|Do not put water on the table.（不要把水倒在桌上。）
+weather_notice|by 10:00 a.m.|by：最晚時間|by 表示截止時間，可能更早；at 則指確切在那個時間點。|You will receive an email by noon.（你最晚中午會收到郵件。）
+equipment_choice|before placing the order|before：在某動作之前|此處 before 後接動名詞 placing；也可接子句 before you place the order。|Check the price before buying.（購買前先確認價格。）
+tender|within six weeks|within：期限範圍|表示必須不超過六週完成；for six weeks 則描述持續六週。|Finish the work within a week.（在一週內完成工作。）
+directions|opposite the museum|opposite：在正對面|opposite 作介係詞可直接接地點，表示在另一側且面對它。|The bank is opposite the station.（銀行在車站正對面。）
+quality_control|from each incoming batch|from：取樣來源|from 表示樣品來自哪個批次；each 表示每一批都要抽查。|Take one sample from each box.（從每個箱子各取一件樣品。）
+incident|behind a stack of boxes|behind：在後方|behind 表示位置在某物後面；本文警示牌因此被擋住。|The sign is behind the door.（告示牌在門後。）
+capacity|through the rear door|through：穿過開口|through 表示從門或通道穿過；across 多指橫越平面，例如馬路。|Carry the box through the doorway.（把箱子搬過門口。）
+medical_visit|for eight hours|for：持續時間|for 後接時間長度，表示禁食要持續八小時；不是八點鐘，八點要用 at eight。|Please wait for ten minutes.（請等十分鐘。）
+renovation|until the ventilation check is completed|until 子句：持續到某時點|這裡 until 後接完整子句，是連接詞；若說 until noon，後接名詞時才是介係詞。兩者都表示持續到某時點。|The office is closed until noon.（辦公室關閉至中午。）
+repair_followup|between 1:00 and 3:00 p.m.|between … and …：兩個端點之間|時間範圍用 between A and B；不可混寫成 between A to B。|Come between two and four.（請在兩點到四點之間過來。）
